@@ -15,7 +15,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config()
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000 ;
  // adding env variables:
  const mongourl=process.env.MONGO_URL
 const jwtsecret=process.env.JWT_SECRET
